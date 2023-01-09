@@ -1,1 +1,40 @@
 
+$color-primary: red;
+$color-secondary: blue;
+$color-tertiary: green;
+
+div {
+border: 1px solid $color-primary;
+height: 200px;
+
+    section{
+            display: flex;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            height: 100px;
+           }
+    h1 {
+        color: $color-tertiary;
+        text-align: center;
+        text-decoration: underline 1px $color-secondary ;
+       }
+
+    article{
+         border: 1px solid $color-tertiary;
+                
+           }   
+
+    p{
+        text-align: center;
+        padding: 10px;
+     }       
+
+    .p-blue{
+             color: $color-secondary;
+           }
+
+    .p-red{
+            color: $color-primary;
+           }       
+}

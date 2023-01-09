@@ -1,0 +1,31 @@
+div {
+  border: 1px solid red;
+  height: 200px;
+}
+div section {
+  display: flex;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 100px;
+}
+div h1 {
+  color: green;
+  text-align: center;
+  text-decoration: underline 1px blue;
+}
+div article {
+  border: 1px solid green;
+}
+div p {
+  text-align: center;
+  padding: 10px;
+}
+div .p-blue {
+  color: blue;
+}
+div .p-red {
+  color: red;
+}
+
+/*# sourceMappingURL=style.css.map */
