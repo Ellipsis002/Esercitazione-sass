@@ -1,0 +1,43 @@
+div {
+  border: 1px solid red;
+}
+
+section {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+p {
+  text-align: center;
+}
+
+h1 {
+  color: green;
+  text-decoration: underline 1px blue;
+  text-align: center;
+}
+
+.p-blue {
+  color: blue;
+  border: 1px solid green;
+  font-size: 1rem;
+}
+
+.p-red {
+  color: red;
+  border: 1px solid green;
+  font-size: 1rem;
+}
+
+.footer {
+  color: green;
+  border: 1px solid blue;
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 1400px;
+}
+
+/*# sourceMappingURL=style.css.map */
