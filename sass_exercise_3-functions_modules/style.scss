@@ -1,44 +1,47 @@
-@mixin article-card($color:blue, $border-color:green, $font-size: 1rem) {
-    color: $color;
-    border: 1px solid $border-color;
-    font-size: $font-size;
-    
-    }
+@use "modulo.scss";
+@use "modulo2.scss";
 
 div{
-    border: 1px solid red;
+    border: 1px solid modulo.$colorred;
+
+    h1{
+        color: modulo.$colorgreen;
+        text-decoration: underline 1px modulo.$colorblue;
+        text-align: center;
+        }
     
 
     section{
             display: flex;
             justify-content: space-around; 
-            margin-left: 20px;
-            margin-right: 20px; 
+            margin-left: remconverter(20);
+            margin-right: remconverter(20); 
+
+
+            article{
+                border: 1px solid modulo.$colorgreen;
+            }
        
 
-                p{
-                text-align: center;
-                }
-
-                h1{
-                color: green;
-                text-decoration: underline 1px blue;
-                text-align: center;
-                }
+                    p{
+                    text-align: center;
+                    }
             }        
     }      
       
 .p-blue{
-    @include article-card($color: blue);
+    color: modulo.$colorblue;
        }
 
 .p-red{
-    @include article-card($color: red);
+    color: modulo.$colorred;
       }
 
 .footer{
-    @include article-card($color: green, $border-color: blue, $font-size: 24px );
-    margin-bottom: 20px;
-    margin-top: 20px;
-    width:1400px
+    color: modulo.$colorgreen;
+    border: 1px solid modulo.$colorblue;
+    font-size: remconverter(24);
+    margin-bottom: remconverter(20);
+    margin-top: remconverter(20);
+    width: remconverter(1400)
        }
